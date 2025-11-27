@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AlphaTrade Pro</title>
+    <title>AlphaTrade Pro | 智富資產管理</title>
+    <!-- Tailwind CSS (CDN for simple setup, usually strictly handled by PostCSS in prod but kept here for safety) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -17,10 +18,12 @@
   <script type="importmap">
 {
   "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
     "recharts": "https://aistudiocdn.com/recharts@^3.5.0"
   }
 }
@@ -28,5 +31,7 @@
 </head>
   <body>
     <div id="root"></div>
+    <!-- 關鍵：Vite 進入點 -->
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
