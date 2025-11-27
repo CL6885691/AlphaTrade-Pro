@@ -30,7 +30,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
+          # 暫時移除 cache 設定，解決沒有 package-lock.json 導致報錯的問題
+          # cache: 'npm' 
 
       - name: Install dependencies (安裝套件)
         run: npm install
